@@ -1,7 +1,7 @@
 <input [formControl]="control" [type]="type" class="block w-full py-1.5 px-3 text-gray-200 border border-gray-400 transition
                               duration-500 focus:outline-none rounded bg-transparent focus:border-indigo-400"
     [placeholder]="placeholder"  [mask]="format"
-    [dropSpecialCharacters]="false"/>
+    />
 
     <ng-container *ngIf = 'control.touched '>
         <p class="text-red-400" *ngIf="control.errors?.['pattern']">
@@ -11,7 +11,7 @@
             the value you inputted is {{ control.errors?.['minlength'].actualLength}} character long</p>
             <p *ngIf="control.errors?.['email']" class="text-red-400">You Must enter valid email</p>
             <p *ngIf="control.errors?.['min']" class="text-red-400" >value to low</p>
-            <p *ngIf="control.errors?.['max']" class="text-red-400">value to High</p>
+            <!-- <p *ngIf="control.errors?.['max']" class="text-red-400">value to High</p> -->
 
     </ng-container>
 
