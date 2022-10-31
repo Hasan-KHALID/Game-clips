@@ -1,3 +1,7 @@
+<app-alert *ngIf="showAlert" [color]="alertColor" >
+    {{alertMsg}}
+</app-alert>
+
 <!-- Registration Form -->
 <form [formGroup]="registerForm"(ngSubmit)="register()">
     <!-- Name -->
@@ -41,7 +45,7 @@
     <!-- Phone Number -->
     <div class="mb-3">
         <label class="inline-block mb-2">Phone Number</label>
-        <app-input [control]="phoneNumber" placeholder="Enter Your Phone Number" format="(000)00000-000000">
+        <app-input [control]="phoneNumber" placeholder="Enter Your Phone Number" format="(000)000-00000">
 
         </app-input>
     </div>
