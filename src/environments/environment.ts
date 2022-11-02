@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase:{
+
+  apiKey: "AIzaSyB8VLxGyE4HuMfoJIhgve_IbzE4nP57gkM",
+  authDomain: "clips-616ff.firebaseapp.com",
+  projectId: "clips-616ff",
+  storageBucket: "clips-616ff.appspot.com",
+  appId: "1:509507022379:web:56daee6489a436514e446e"
+
+  }
+  
 };
 
 /*
@@ -14,3 +24,11 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+// const firebaseConfig = {
+//   apiKey: "AIzaSyB8VLxGyE4HuMfoJIhgve_IbzE4nP57gkM",
+//   authDomain: "clips-616ff.firebaseapp.com",
+//   projectId: "clips-616ff",
+//   storageBucket: "clips-616ff.appspot.com",
+//   messagingSenderId: "509507022379",
+//   appId: "1:509507022379:web:56daee6489a436514e446e"
+// };
