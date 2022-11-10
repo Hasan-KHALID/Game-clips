@@ -11,11 +11,12 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth'
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component'
-import { VideoModule } from './video/video.module';
+
 import { ClipComponent } from './clip/clip.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { ClipsListComponent } from './clips-list/clips-list.component';
+import { FbTimestampPipe } from './pipes/fb-timestamp.pipe';
 
 
 
@@ -27,7 +28,8 @@ import { ClipsListComponent } from './clips-list/clips-list.component';
     AboutComponent,
     ClipComponent,
     NotFoundComponent,
-    ClipsListComponent
+    ClipsListComponent,
+    FbTimestampPipe
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,6 @@ import { ClipsListComponent } from './clips-list/clips-list.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    VideoModule,
     AppRoutingModule,
     AngularFireStorageModule
     

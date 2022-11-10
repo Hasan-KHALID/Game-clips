@@ -82,4 +82,17 @@ deleteClip($event: Event, clip:Iclip){
 
 
 }
+
+async copyToClipboadr($event: MouseEvent, docId: string|undefined){
+  $event.preventDefault()
+  if(!docId){
+    return
+  }
+
+  const url = `${location.origin}/clip/${docId}`
+
+  await navigator.clipboard.writeText(url)
+
+  alert('link copied')
+}
 }
