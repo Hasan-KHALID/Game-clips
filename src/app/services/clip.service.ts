@@ -34,7 +34,7 @@ export class ClipService implements Resolve<Iclip | null> {
     this.clipsCollection = db.collection('clips')
   }
 
-  creatClip(data:Iclip): Promise<DocumentReference<Iclip>>{
+  createClip(data:Iclip): Promise<DocumentReference<Iclip>>{
    return this.clipsCollection.add(data)
   }
 

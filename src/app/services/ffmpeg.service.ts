@@ -21,7 +21,7 @@ export class FfmpegService {
     this.isReady = true
   }
 
-  async getScreenshot(file:File){
+  async getScreenshots(file:File){
     this.isReady =true
     const data = await fetchFile(file)
 
