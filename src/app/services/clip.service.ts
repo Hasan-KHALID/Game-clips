@@ -94,6 +94,7 @@ export class ClipService implements Resolve<Iclip | null> {
         const lastDocID = this.pageClips[length-1].docId
         const lastDoc = await this.clipsCollection.doc(lastDocID).get().toPromise()
 
+
         query = query.startAfter(lastDoc)
       }
       const snapshot = await query.get()
